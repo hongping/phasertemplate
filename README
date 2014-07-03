@@ -1,0 +1,18 @@
+This repository act as the basic project template for Phaser game engine. The template used Phaser game engine v2.0.5 hosted on CDNJS.
+
+The "Game" is consisted of 5 stages, by sequence:
+1. Boot -> load the assets for "Preload" stage, as well as setup global required variables
+2. Preload -> preload asset
+3. MainMenu -> intro scene
+4. Game -> main game logic goes here
+5. GameOver -> after game, for highscores, etc.
+
+The Setup.js will combined all the stages and setup the HTML element where Phaser will insert the canvas/WebGL.
+
+In order to clone from this project template, please use the following git workflow from this tutorial:
+http://kevinthompson.info/blog/2013/11/11/using-git-repos-as-project-templates.html
+
+Basically, simple 3 steps:
+$ git clone --depth 1 --origin source project-template new-project
+$ cd new-project
+$ git create new-project
