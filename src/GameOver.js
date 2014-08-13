@@ -1,6 +1,6 @@
-Game.Game = function(g) {};
+Game.GameOver = function(g) {};
 
-Game.Game.prototype = {
+Game.GameOver.prototype = {
     preload: function(g) {},
     create: function(g) {},
     update: function(g) {},
