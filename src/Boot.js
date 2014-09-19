@@ -8,7 +8,7 @@ Game.Boot = function(g) {};
 
 Game.Boot.prototype = {
     preload: function(g) {},
-    create: function(g) {
+    init: function(g) {
         this.stage.disableVisibilityChange = true;
 
         if (this.game.device.desktop) {
@@ -38,7 +38,7 @@ Game.Boot.prototype = {
     gameResized: function(width,height) {
         // placeholder
     },
-    enterIncorrectOrientaton: function() {
+    enterIncorrectOrientation: function() {
         Game.orientated = false;
         document.getElementById('orientation').style.display = 'block';
     },
@@ -46,7 +46,8 @@ Game.Boot.prototype = {
         Game.orientated = true;
         document.getElementById('orientation').style.display = 'none';
     },
-    update: function(g) {
+    create: function(g) {
         g.state.start('Preload');
-    }
+    },
+    update: function() {},
 };
